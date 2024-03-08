@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Space™</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://logos-world.net/wp-content/uploads/2023/03/Space-Symbol.png"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Lato", sans-serif;
+      }
+      body,
+      html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+      }
+
+      /* Create a Parallax Effect */
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* First image (Logo. Full height) */
+      .bgimg-1 {
+        background-image: url("/w3images/parallax1.jpg");
+        min-height: 100%;
+      }
+
+      /* Second image (Portfolio) */
+      .bgimg-2 {
+        background-image: url("/w3images/parallax2.jpg");
+        min-height: 400px;
+      }
+
+      /* Third image (Contact) */
+      .bgimg-3 {
+        background-image: url("/w3images/parallax3.jpg");
+        min-height: 400px;
+      }
+
+      .w3-wide {
+        letter-spacing: 10px;
+      }
+      .w3-hover-opacity {
+        cursor: pointer;
+      }
+
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1600px) {
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+          background-attachment: scroll;
+          min-height: 400px;
+        }
+      }
+      .w3-button {
+        transition: 0.5s;
+      }
+      .w3-round {
+        transition: 0.4s;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+      }
+      .widths {
+        max-width: 980px;
+      }
+      /* CSS code to increase the width of the image */
+       link[rel="icon"] {
+        width: 150px; /* Adjust the width value as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button"
+          ><i class="bi bi-house-fill" style="margin-right: 10px"></i>HOME</a
+        >
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-user" style="margin-right: 10px"></i> ABOUT</a
+        >
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-th" style="margin-right: 10px"></i> PORTFOLIO</a
+        >
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-envelope" style="margin-right: 10px"></i> CONTACT</a
+        >
+        <a
+          href="#"
+          class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"
+        >
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a
+          href="#about"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >ABOUT<i class="bi bi-info-square-fill" style="margin-left: 10px"></i
+        ></a>
+        <a
+          href="#portfolio"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >PORTFOLIO<i
+            class="bi bi-bar-chart-fill"
+            style="margin-left: 10px"
+          ></i
+        ></a>
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >CONTACT<i class="bi bi-telephone-fill" style="margin-left: 10px"></i
+        ></a>
+        <a href="#" class="w3-bar-item w3-button"
+          >SEARCH<i class="bi bi-search" style="margin-left: 10px"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space: nowrap">
+        <span
+          class="w3-center w3-padding-large w3-dark w3-xlarge w3-wide w3-animate-opacity"
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/SpaceLogo.svg/250px-SpaceLogo.svg.png"
+            alt=""
+        /></span>
+      </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">ABOUT SPACE</h3>
+      <p class="w3-center"><em>I love astrology</em></p>
+      <p>
+        Welcome to my cosmic corner of the internet! Here, amidst the vast
+        expanse of cyberspace, I invite you to join me on an interstellar
+        journey through the wonders of space exploration, astronomy, and beyond.
+        Embark with me as we traverse the celestial realms, delving into the
+        mysteries of the universe and unlocking the secrets of the cosmos.
+        Through a blend of insightful articles, captivating stories, and
+        awe-inspiring imagery, I seek to ignite your curiosity and fuel your
+        imagination. From the breathtaking beauty of distant galaxies to the
+        intricate dance of celestial bodies, each post is a celestial voyage
+        waiting to unfold. Whether you're a seasoned stargazer, a budding
+        astronomer, or simply an admirer of the cosmos, there's something here
+        for everyone.
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <p>
+            <b
+              ><i class="bi bi-card-image" style="margin-right: 10px"></i>My fav
+              space picture</b
+            >
+          </p>
+          <br />
+          <img
+            src="https://images.interestingengineering.com/img/iea/nZwXlJlxwv/andromeda.jpg"
+            class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+            alt="Photo of Me"
+            width="500"
+            height="333"
+          />
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+          <p>
+            Welcome to my website, where we embark on a journey through the
+            wonders of space! Space, the final frontier, has always captivated
+            humanity's imagination, sparking curiosity and inspiring countless
+            discoveries. From the mesmerizing beauty of distant galaxies to the
+            mind-boggling vastness of the cosmos, space offers an endless array
+            of mysteries waiting to be unravelled. Explore the Cosmos: Join me
+            as we delve into the depths of the cosmos, exploring the celestial
+            bodies that populate our universe. From the majestic planets of our
+            solar system to the enigmatic exoplanets orbiting distant stars,
+            each celestial body holds its own unique story and secrets waiting
+            to be revealed. Discover the Universe's Wonders: Venture beyond the
+            confines of our solar system and discover the awe-inspiring wonders
+            of the universe. From the breathtaking beauty of nebulae and
+            supernovae to the mysterious black holes lurking in the darkness of
+            space, the universe is filled with phenomena that challenge our
+            understanding of the cosmos.
+          </p>
+        </div>
+      </div>
+      <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+      <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+      <div class="w3-light-grey">
+        <div
+          class="w3-container w3-padding-small w3-dark-grey w3-center"
+          style="width: 90%"
+        >
+          90%
+        </div>
+      </div>
+      <p class="w3-wide"><i class="bi bi-rocket-takeoff-fill"></i>Astrology</p>
+      <div class="w3-light-grey">
+        <div
+          class="w3-container w3-padding-small w3-dark-grey w3-center"
+          style="width: 80%"
+        >
+          80%
+        </div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+      <div class="w3-light-grey">
+        <div
+          class="w3-container w3-padding-small w3-dark-grey w3-center"
+          style="width: 85%"
+        >
+          85%
+        </div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+      <div class="w3-light-grey">
+        <div
+          class="w3-container w3-padding-small w3-dark-grey w3-center"
+          style="width: 75%"
+        >
+          75%
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">14+</span><br />
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br />
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br />
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br />
+        Meetings
+      </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+      </div>
+    </div>
+
+          <!-- Container (Portfolio Section) -->
+          <div class="w3-content w3-container w3-padding-64" id="portfolio">
+            <h3 class="w3-center">MY WORK</h3>
+            <p class="w3-center">
+              <em
+                >Here are some of my latest lorem work ipsum tipsum.<br />
+                Click on the images to make them bigger</em
+              >
+            </p>
+            <br />
+
+            <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+            <div class="w3-row-padding w3-center">
+              <div class="w3-col m3">
+                <img
+                  src="https://static.independent.co.uk/2022/01/26/10/Andromeda_Galaxy_David-Deddy-Dayag_WEB.jpg?width=1200"
+                  style="width: 100%"
+                  onclick="onClick(this)"
+                  class="w3-hover-opacity"
+                  alt="The mist over the mountains"
+                />
+              </div>
+
+              <div class="w3-col m3">
+                <img
+                  src="https://nie-images.s3.amazonaws.com/gall_content/2018/2/2018_2$largeimg16_Feb_2018_180948737.jpg"
+                  style="width: 100%"
+                  onclick="onClick(this)"
+                  class="w3-hover-opacity"
+                  alt="Coffee beans"
+                />
+              </div>
+
+              <div class="w3-col m3">
+                <img
+                  src="https://t4.ftcdn.net/jpg/02/27/41/01/360_F_227410177_Tz02OMGV1oKXhRY9Xdgudf7nKbg8iBT1.jpg"
+                  style="width: 100%"
+                  onclick="onClick(this)"
+                  class="w3-hover-opacity"
+                  alt="Bear closeup"
+                />
+              </div>
+
+              <div class="w3-col m3">
+                <img
+                  src="https://media.istockphoto.com/id/592031250/photo/milky-way-and-pink-light-at-mountains-night-colorful-landscape.jpg?s=612x612&w=0&k=20&c=MlBuwRU4M-eZda80ONcdV9NbwtyJQrvggug31A6vLJU="
+                  style="width: 100%"
+                  onclick="onClick(this)"
+                  class="w3-hover-opacity"
+                  alt="Quiet ocean"
+                />
+              </div>
+            </div>
+
+            <div class="w3-row-padding w3-center w3-section">
+              <div class="w3-col m3">
+                <img
+                  src="https://c4.wallpaperflare.com/wallpaper/638/16/939/space-interstellar-movie-planet-black-holes-wallpaper-preview.jpg"
+                  style="width: 100%"
+                  onclick="onClick(this)"
+                  class="w3-hover-opacity"
+                  alt="The mist"
+                />
+              </div>
+
+              <div class="w3-col m3">
+                <img
+                  src="https://rukminim2.flixcart.com/image/850/1000/l0zm64w0/poster/u/j/w/large-movie-interstellar-hd-wallpaper-print-poster-print-poster-original-imagcnzzd3xvn7dz.jpeg?q=90&crop=false"
+                  style="width: 100%"
+                  onclick="onClick(this)"
+                  class="w3-hover-opacity"
+                  alt="My beloved typewriter"
+                />
+              </div>
+
+              <div class="w3-col m3">
+                <img
+                  src="https://e1.pxfuel.com/desktop-wallpaper/332/265/desktop-wallpaper-i-created-some-interstellar-from-screenshots-interstellar.jpg"
+                  style="width: 100%"
+                  onclick="onClick(this)"
+                  class="w3-hover-opacity"
+                  alt="Empty ghost train"
+                />
+              </div>
+
+              <div class="w3-col m3">
+                <img
+                  src="https://c4.wallpaperflare.com/wallpaper/821/863/653/interstellar-movie-wallpaper-preview.jpg"
+                  style="width: 100%"
+                  onclick="onClick(this)"
+                  class="w3-hover-opacity"
+                  alt="Sailing"
+                />
+              </div>
+              <button
+                class="w3-button w3-padding-large w3-light-grey"
+                style="margin-top: 64px"
+              >
+                LOAD MORE
+              </button>
+            </div>
+          </div>
+          
+    <!-- Modal for full size images on click-->
+    <div
+      id="modal01"
+      class="w3-modal w3-black"
+      onclick="this.style.display='none'"
+    >
+      <span
+        class="w3-button w3-large w3-black w3-display-topright"
+        title="Close Modal Image"
+        ><i class="fa fa-remove"></i
+      ></span>
+      <div
+        class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+      >
+        <img id="img01" class="w3-image" />
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+      <h3 class="w3-center">WHERE I WORK</h3>
+      <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+          <img
+            src="https://astrodate.co.uk/wp-content/uploads/2022/02/Astrodate-Contact-Page.png"
+            class="w3-image w3-round"
+            style="width: 100%"
+          />
+        </div>
+        <div class="w3-col m8 w3-panel">
+          <div class="w3-large w3-margin-bottom">
+            <i
+              class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            ></i>
+            Klang, Salengor<br />
+            <i
+              class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            ></i>
+            Phone: +00 151515<br />
+            <i
+              class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            ></i>
+            Email: mail@mail.com<br />
+          </div>
+          <p>
+            Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a
+            note:
+          </p>
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
+              <div class="w3-half">
+                <input
+                  class="w3-input w3-border"
+                  type="text"
+                  placeholder="Name"
+                  required
+                  name="Name"
+                />
+              </div>
+              <div class="w3-half">
+                <input
+                  class="w3-input w3-border"
+                  type="text"
+                  placeholder="Email"
+                  required
+                  name="Email"
+                />
+              </div>
+            </div>
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+            <button
+              class="w3-button w3-black w3-right w3-section"
+              type="submit"
+            >
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+    >
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+      <p>&copy; 2024 Space Exploration Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Change style of navbar on scroll
+      window.onscroll = function () {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " w3-card w3-animate-top w3-white",
+            ""
+          );
+        }
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>

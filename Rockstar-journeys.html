@@ -24,6 +24,60 @@
       }
       .mySlides {
         display: none;
+        transition: opacity 0.5s ease-in-out;
+      }
+      /* Example: Adding background color and hover effect to navbar */
+      .w3-bar {
+        background-color: #333;
+      }
+
+      .w3-bar-item:hover {
+        background-color: #555;
+      }
+      /* Example: Changing color scheme */
+      .w3-black {
+        background-color: #f0f0f0;
+        color: #333;
+      }
+      /* Example: Styling buttons */
+      .w3-button {
+        background-color: #007bff;
+        border-radius: 1px;
+        color: #fff;
+        padding: 8px 20px;
+        transition: 0.5s;
+        /* Example: Customizing modal design */
+        .w3-modal-content {
+          background-color: #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+        }
+
+        .w3-modal-content input[type="text"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+      }
+
+      .w3-button:hover {
+        background-color: #0056b3;
+      }
+      /* Example: Styling footer */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+      }
+
+      footer a {
+        color: black;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -204,9 +258,9 @@
           class="w3-container w3-content w3-padding-64"
           style="max-width: 800px"
         >
-          <h2 class="w3-wide w3-center">TOUR DATES</h2>
+          <h2 class="w3-wide w3-center">More maps & games</h2>
           <p class="w3-opacity w3-center">
-            <i>Remember to book your tickets!</i>
+            <i>Remember to buy them!</i>
           </p>
           <br />
 
@@ -234,7 +288,7 @@
               <div class="w3-container w3-white">
                 <p><b>Liberty city</b></p>
                 <p class="w3-opacity">Fri 27 Nov 2016</p>
-                <p>it is an island city that is surrounded by water.</p>
+                <p>It is an island city that is surrounded by water.</p>
                 <button
                   class="w3-button w3-black w3-margin-bottom"
                   onclick="document.getElementById('ticketModal').style.display='block'"
@@ -270,14 +324,14 @@
                 class="w3-hover-opacity"
               />
               <div class="w3-container w3-white">
-                <p><b>San</b></p>
+                <p><b>Senora Desert</b></p>
                 <p class="w3-opacity">Sun 29 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <p>located in Blaine County, San Andreas.</p>
                 <button
                   class="w3-button w3-black w3-margin-bottom"
                   onclick="document.getElementById('ticketModal').style.display='block'"
                 >
-                  Buy Tickets
+                  Buy Map
                 </button>
               </div>
             </div>
