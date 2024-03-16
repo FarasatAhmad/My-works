@@ -1,3 +1,4 @@
+<!-- It's recomended that you download all these files -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,6 +13,10 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link
       rel="stylesheet"
@@ -39,11 +44,12 @@
       .bgimg-1 {
         background-position: center;
         background-size: cover;
-        background-image: url("https://i.pinimg.com/564x/2f/95/17/2f95175f2ab2afd82b76b8141200e92a.jpg");
+        background-image: url("https://4.bp.blogspot.com/-rYwZhGBJZdU/XM5BsO_CaYI/AAAAAAABUrI/yrJOEcxR7JUypJu2YmyMs8dyd6uG6EmsACPcBGAYYCw/s1600/SPACE-min.jpg");
         min-height: 100%;
       }
 
-      .w3-bar .w3-button {
+      .w3-bar,
+      .w3-button {
         padding: 16px;
         transition: 0.5s;
       }
@@ -128,22 +134,24 @@
     <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
       <div class="w3-display-left w3-text-white" style="padding: 48px">
         <span
-          class="w3-jumbo w3-hide-small w3-text-white"
-          style="background-color: rgba(0, 0, 0, 0.726)"
+          class="w3-jumbo w3-hide-small w3-text-black"
+          style="background-color: rgb(16, 16, 16)"
           >Welcome to our official space site.</span
         ><br />
-        <span class="w3-xxlarge w3-hide-large w3-hide-medium"
-        style="background-color: rgba(0, 0, 0, 0.587)"
+        <span
+          class="w3-xxlarge w3-hide-large w3-hide-medium"
+          style="color: black"
           >Start something that matters</span
         ><br />
-        <span class="w3-large"
-        style="background-color: rgba(0, 0, 0, 0.704)"
+        <span
+          class="w3-large"
+          style="background-color: rgb(16, 16, 16); padding: 10px 20px"
           >Let's explore the cosmos and uncover its mysteries together.</span
         >
         <p>
           <a
             href="#about"
-            class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-hover-black"
+            class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-hover-pale-green"
             style="transition: 0.5s"
             >Learn more about us</a
           >
@@ -187,7 +195,7 @@
       <div class="w3-row-padding w3-center" style="margin-top: 64px">
         <div class="w3-quarter">
           <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-          <p class="w3-large">Responsive</p>
+          <p class="w3-large w3-wide">Responsive</p>
           <p>
             Experience seamless browsing on any device, ensuring you can explore
             the universe wherever you are.
@@ -195,7 +203,7 @@
         </div>
         <div class="w3-quarter">
           <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-          <p class="w3-large">Passion</p>
+          <p class="w3-large w3-wide">Passion</p>
           <p>
             Our profound passion for the cosmos drives our relentless pursuit of
             knowledge and discovery.
@@ -203,7 +211,7 @@
         </div>
         <div class="w3-quarter">
           <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-          <p class="w3-large">Design</p>
+          <p class="w3-large w3-wide">Design</p>
           <p>
             Indulge in an aesthetically pleasing and user-friendly interface
             crafted to enhance your cosmic journey.
@@ -211,7 +219,7 @@
         </div>
         <div class="w3-quarter">
           <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-          <p class="w3-large">Support</p>
+          <p class="w3-large w3-wide">Support</p>
           <p>
             Rest assured, our dedicated support team is here to assist you every
             step of the way, ensuring your exploration of the universe is smooth
@@ -243,7 +251,10 @@
             unparalleled creativity.
           </p>
           <p>
-            <a href="#work" class="w3-button w3-black"
+            <a
+              href="#work"
+              class="w3-button w3-red w3-hover-black"
+              style="transition: 0.9s"
               ><i class="fa fa-th"></i> View Our Works</a
             >
           </p>
@@ -283,12 +294,18 @@
                 depart Earth's atmosphere.
               </p>
               <p>
-                <button
-                  class="w3-button w3-light-grey w3-block"
-                  title="Not functional"
+                <a
+                  href="https://en.wikipedia.org/wiki/Space_exploration#:~:text=A%20spaceflight%20typically%20begins%20with,area%20of%20study%20called%20astrodynamics."
+                  style="text-decoration: none"
                 >
-                  <i class="fa fa-envelope"></i> Learn more
-                </button>
+                  <button
+                    class="w3-button w3-pale-green w3-btn w3-hover-black w3-block"
+                    title="Learn more"
+                    style="transition: 0.9s"
+                  >
+                    <i class="fa fa-envelope"></i> Learn more
+                  </button>
+                </a>
               </p>
             </div>
           </div>
@@ -308,12 +325,18 @@
                 gliding silently through the endless expanse of space.
               </p>
               <p>
-                <button
-                  class="w3-button w3-light-grey w3-block"
-                  title="Not functional"
+                <a
+                  href="https://en.wikipedia.org/wiki/Satellite"
+                  style="text-decoration: none"
                 >
-                  <i class="fa fa-envelope"></i> Learn more
-                </button>
+                  <button
+                    class="w3-button w3-pale-green w3-btn w3-hover-black w3-block"
+                    title="Learn more"
+                    style="transition: 0.9s"
+                  >
+                    <i class="fa fa-envelope"></i> Learn more
+                  </button>
+                </a>
               </p>
             </div>
           </div>
@@ -333,12 +356,18 @@
                 the vast silence of the cosmos.
               </p>
               <p>
-                <button
-                  class="w3-button w3-light-grey w3-block"
-                  title="Not functional"
+                <a
+                  href="https://en.wikipedia.org/wiki/Bruce_McCandless_II"
+                  style="text-decoration: none"
                 >
-                  <i class="fa fa-envelope"></i> Learn more
-                </button>
+                  <button
+                    class="w3-button w3-pale-green w3-btn w3-hover-black w3-block"
+                    title="Learn more"
+                    style="transition: 0.9s"
+                  >
+                    <i class="fa fa-envelope"></i> Learn more
+                  </button>
+                </a>
               </p>
             </div>
           </div>
@@ -354,12 +383,18 @@
                 collision course over millions of years.
               </p>
               <p>
-                <button
-                  class="w3-button w3-light-grey w3-block"
-                  title="Not functional"
+                <a
+                  href="https://en.wikipedia.org/wiki/Andromeda-Milky_Way_collision"
+                  style="text-decoration: none"
                 >
-                  <i class="fa fa-envelope"></i> Learn more
-                </button>
+                  <button
+                    class="w3-button w3-pale-green w3-btn w3-hover-black w3-block"
+                    title="Learn more"
+                    style="transition: 0.9s"
+                  >
+                    <i class="fa fa-envelope"></i> Learn more
+                  </button>
+                </a>
               </p>
             </div>
           </div>
@@ -390,43 +425,45 @@
     <!-- Work Section -->
     <div class="w3-container" style="padding: 128px 16px" id="work">
       <h3 class="w3-center w3-wide">OUR WORK</h3>
-      <p class="w3-center w3-large">What we've done for people</p>
+      <p class="w3-center w3-hover-opacity w3-large" style="transition: 0.5s">
+        What we've done for people
+      </p>
 
       <div class="w3-row-padding" style="margin-top: 64px">
         <div class="w3-col l3 m6">
           <img
-            src="Under-work.jpg"
-            style="width: 100%"
+            src="Image-space1.png"
+            style="width: 100%; transition: 0.5s"
             onclick="onClick(this)"
             class="w3-hover-opacity"
-            alt="A microphone"
+            alt="Planet with rings"
           />
         </div>
         <div class="w3-col l3 m6">
           <img
-            src="Under-work.jpg"
-            style="width: 100%"
+            src="Image-space2.png"
+            style="width: 100%; transition: 0.5s"
             onclick="onClick(this)"
             class="w3-hover-opacity"
-            alt="A phone"
+            alt="J1407b aka Super Saturn"
           />
         </div>
         <div class="w3-col l3 m6">
           <img
-            src="Under-work.jpg"
-            style="width: 100%"
+            src="Image-space3.png"
+            style="width: 100%; transition: 0.5s"
             onclick="onClick(this)"
             class="w3-hover-opacity"
-            alt="A drone"
+            alt="Uranus rings"
           />
         </div>
         <div class="w3-col l3 m6">
           <img
-            src="Under-work.jpg"
-            style="width: 100%"
+            src="Image-space6.png"
+            style="width: 100%; transition: 0.5s"
             onclick="onClick(this)"
             class="w3-hover-opacity"
-            alt="Soundbox"
+            alt="Satellite from far"
           />
         </div>
       </div>
@@ -434,38 +471,38 @@
       <div class="w3-row-padding w3-section">
         <div class="w3-col l3 m6">
           <img
-            src="Under-work.jpg"
-            style="width: 100%"
+            src="Image-space4.png"
+            style="width: 100%; transition: 0.5s"
             onclick="onClick(this)"
             class="w3-hover-opacity"
-            alt="A tablet"
+            alt="Satellite from near"
           />
         </div>
         <div class="w3-col l3 m6">
           <img
-            src="Under-work.jpg"
-            style="width: 100%"
+            src="Image-space5.png"
+            style="width: 100%; transition: 0.5s"
             onclick="onClick(this)"
             class="w3-hover-opacity"
-            alt="A camera"
+            alt="Planet covered with smoke"
           />
         </div>
         <div class="w3-col l3 m6">
           <img
-            src="Under-work.jpg"
-            style="width: 100%"
+            src="Image-space7.png"
+            style="width: 100%; transition: 0.5s"
             onclick="onClick(this)"
             class="w3-hover-opacity"
-            alt="A typewriter"
+            alt="Red Planet"
           />
         </div>
         <div class="w3-col l3 m6">
           <img
-            src="Under-work.jpg"
-            style="width: 100%"
+            src="Image-space8.png"
+            style="width: 100%; transition: 0.5s"
             onclick="onClick(this)"
             class="w3-hover-opacity"
-            alt="A tableturner"
+            alt="Probably Pluto"
           />
         </div>
       </div>
@@ -480,7 +517,7 @@
       <span
         class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
         title="Close Modal Image"
-        >×</span
+        >X</span
       >
       <div
         class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
@@ -550,7 +587,12 @@
       <div class="w3-row-padding" style="margin-top: 64px">
         <div class="w3-third w3-section">
           <ul class="w3-ul w3-white w3-hover-shadow">
-            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+            <li
+              class="w3-brown w3-hover-black w3-xlarge w3-padding-32"
+              style="transition: 0.9s"
+            >
+              Basic
+            </li>
             <li class="w3-padding-16"><b>Cosmic</b> Explorer</li>
             <li class="w3-padding-16"><b>10GB</b> Space Voyage</li>
             <li class="w3-padding-16"><b>10</b> Communication Channels</li>
@@ -561,7 +603,9 @@
               <span class="w3-opacity">per linar cycle</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-black w3-padding-large">
+              <button
+                class="w3-button w3-brown w3-hover-black w3-padding-large"
+              >
                 Subscribe
               </button>
             </li>
@@ -569,7 +613,12 @@
         </div>
         <div class="w3-third">
           <ul class="w3-ul w3-white w3-hover-shadow">
-            <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
+            <li
+              class="w3-red w3-hover-black w3-xlarge w3-padding-48"
+              style="transition: 0.9s"
+            >
+              Pro
+            </li>
             <li class="w3-padding-16"><b>Interstellar</b> Navigator</li>
             <li class="w3-padding-16"><b>25GB</b> Space Odyssey</li>
             <li class="w3-padding-16"><b>25</b> Communication Channels</li>
@@ -580,7 +629,7 @@
               <span class="w3-opacity">per lunar cycle</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-black w3-padding-large">
+              <button class="w3-button w3-red w3-padding-large w3-hover-black">
                 Subscribe
               </button>
             </li>
@@ -588,7 +637,12 @@
         </div>
         <div class="w3-third w3-section">
           <ul class="w3-ul w3-white w3-hover-shadow">
-            <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+            <li
+              class="w3-amber w3-xlarge w3-hover-black w3-padding-32"
+              style="transition: 0.9s"
+            >
+              Premium
+            </li>
             <li class="w3-padding-16"><b>Galactic</b> Pioneer</li>
             <li class="w3-padding-16"><b>50GB</b> Space Expedition</li>
             <li class="w3-padding-16"><b>50</b> Communication Channels</li>
@@ -599,7 +653,9 @@
               <span class="w3-opacity">per lunar cycle</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-black w3-padding-large">
+              <button
+                class="w3-button w3-amber w3-hover-black w3-padding-large"
+              >
                 Subscribe
               </button>
             </li>
@@ -669,7 +725,11 @@
           </p>
           <p>
             <a href="action_page.html" target="_blank">
-              <button class="w3-button w3-black" type="button">
+              <button
+                class="w3-button w3-pale-blue w3-hover-black w3-btn"
+                type="button"
+                style="transition: 0.5s"
+              >
                 <i class="fa fa-paper-plane"></i> SEND MESSAGE
               </button>
             </a>
@@ -677,21 +737,51 @@
         </form>
         <!-- Image of location/map -->
         <img
-          src="https://static.scientificamerican.com/sciam/cache/file/26DD62F9-3743-4ED7-A76BD863BD498E6D_source.jpg?w=1200"
-          class="w3-image w3-greyscale"
-          style="width: 100%; margin-top: 48px"
+          src="Image-space-last.jpg"
+          style="width: 100%; margin-top: 48px; transition: 0.9s"
+          onclick="onClick(this)"
+          class="w3-hover-opacity w3-animate-zoom w3-image"
+          alt="Astronaut doing some magic tricks"
+          title="Astronaut doing some magic tricks"
         />
-        <p>
-          NASA has named its first astronaut crew bound for the moon in more
-          than 50 years.
-        </p>
+        <div style="display: flex; justify-content: space-between">
+          <p class="w3-animate-opacity" style="width: 750px">
+            In the weightlessness of space, an astronaut floats effortlessly,
+            their hands manipulating a deck of floating cards with practiced
+            precision. With a flick of the wrist, they perform mesmerizing
+            tricks, defying gravity as they weave illusions in the void. Each
+            sleight of hand is a testament to their skill and adaptability,
+            turning the vast expanse of space into their own cosmic stage. As
+            they perform their feats of magic, they bring a sense of wonder and
+            joy to the endless solitude of the cosmos, proving that even in the
+            most remote reaches of the universe, the human spirit can find
+            moments of enchantment and delight.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Gregory_Chamitoff">
+            <button
+              class="w3-btn w3-button w3-hover-black"
+              style="
+                background-color: rgb(255, 87, 87);
+                position: relative;
+                margin: 40px 70px 0px 0px;
+                padding: 10px 35px 10px 35px;
+                border-radius: 2px;
+              "
+            >
+              <i class="bi bi-info-circle"></i>Learn More
+            </button>
+          </a>
+        </div>
       </div>
     </div>
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64">
-      <a href="#home" class="w3-button w3-light-grey"
-        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      <a
+        href="Space™.html"
+        target="_blank"
+        class="w3-button w3-btn w3- w3-light-grey"
+        ><i class="bi bi-info-circle w3-margin-right"></i>Learn more</a
       >
       <div class="w3-xlarge w3-section w3-wide">
         <a
@@ -725,6 +815,7 @@
           href="https://www.w3schools.com/w3css/default.asp"
           title="W3.CSS"
           target="_blank"
+          style="transition: 0.5s"
           class="w3-hover-text-green"
           >w3.css</a
         >
