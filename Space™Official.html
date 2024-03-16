@@ -59,6 +59,12 @@
       button:hover {
         color: black;
       }
+      @media (min-width: 470px){
+        #final {
+          display: flex;
+          justify-content: space-around;
+        }
+      }
     </style>
   </head>
   <body>
@@ -744,26 +750,19 @@
           alt="Astronaut doing some magic tricks"
           title="Astronaut doing some magic tricks"
         />
-        <div style="display: flex; justify-content: space-between">
+        <div id="final" style="display: flex; justify-content: space-between">
           <p class="w3-animate-opacity" style="width: 750px">
-            In the weightlessness of space, an astronaut floats effortlessly,
-            their hands manipulating a deck of floating cards with practiced
-            precision. With a flick of the wrist, they perform mesmerizing
-            tricks, defying gravity as they weave illusions in the void. Each
-            sleight of hand is a testament to their skill and adaptability,
-            turning the vast expanse of space into their own cosmic stage. As
-            they perform their feats of magic, they bring a sense of wonder and
-            joy to the endless solitude of the cosmos, proving that even in the
-            most remote reaches of the universe, the human spirit can find
-            moments of enchantment and delight.
+            In the weightlessness of space, an astronaut performs captivating
+            magic tricks with floating cards, turning the cosmos into their own
+            cosmic stage.
           </p>
+          <div style="height: 100px; width: 150px; display: flex; justify-content: start; align-items: center;">
           <a href="https://en.wikipedia.org/wiki/Gregory_Chamitoff">
             <button
               class="w3-btn w3-button w3-hover-black"
               style="
                 background-color: rgb(255, 87, 87);
                 position: relative;
-                margin: 40px 70px 0px 0px;
                 padding: 10px 35px 10px 35px;
                 border-radius: 2px;
               "
@@ -771,6 +770,7 @@
               <i class="bi bi-info-circle"></i>Learn More
             </button>
           </a>
+        </div>
         </div>
       </div>
     </div>
